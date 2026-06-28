@@ -39,9 +39,9 @@
 
 /* Dark Theme Variables (Default) */
 [data-theme="dark"] {
-  --bg-primary: #090d16;
-  --bg-secondary: rgba(17, 24, 39, 0.7);
-  --bg-tertiary: #111827;
+  --bg-primary: #0b0f19;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1f2937;
   --bg-surface-hover: rgba(255, 255, 255, 0.04);
   --border-color: rgba(255, 255, 255, 0.08);
   --border-focus: var(--indigo-500);
@@ -50,19 +50,19 @@
   --text-secondary: #9ca3af;
   --text-muted: #6b7280;
   
-  --glass-blur: blur(20px);
-  --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
-  --input-bg: rgba(10, 15, 30, 0.6);
+  --glass-blur: none;
+  --glass-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  --input-bg: #0e131f;
   --table-header-bg: rgba(255, 255, 255, 0.02);
-  --card-gradient: linear-gradient(135deg, rgba(31, 41, 55, 0.3) 0%, rgba(17, 24, 39, 0.5) 100%);
-  --glow-color: rgba(99, 102, 241, 0.15);
+  --card-gradient: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  --glow-color: rgba(99, 102, 241, 0.05);
 }
 
 /* Light Theme Variables */
 [data-theme="light"] {
   --bg-primary: #f3f4f6;
-  --bg-secondary: rgba(255, 255, 255, 0.7);
-  --bg-tertiary: #ffffff;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f9fafb;
   --bg-surface-hover: rgba(0, 0, 0, 0.03);
   --border-color: rgba(0, 0, 0, 0.08);
   --border-focus: var(--indigo-600);
@@ -71,12 +71,12 @@
   --text-secondary: #4b5563;
   --text-muted: #9ca3af;
   
-  --glass-blur: blur(20px);
-  --glass-shadow: 0 12px 40px 0 rgba(31, 41, 55, 0.08);
-  --input-bg: rgba(255, 255, 255, 0.9);
+  --glass-blur: none;
+  --glass-shadow: 0 4px 20px 0 rgba(31, 41, 55, 0.04);
+  --input-bg: #f9fafb;
   --table-header-bg: rgba(0, 0, 0, 0.01);
-  --card-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(243, 244, 246, 0.6) 100%);
-  --glow-color: rgba(99, 102, 241, 0.06);
+  --card-gradient: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  --glow-color: rgba(99, 102, 241, 0.02);
 }
 
 /* Global Reset & Base Setup */
@@ -114,14 +114,7 @@ a:hover {
 
 /* Decorative Glow Blobs */
 .blob {
-  position: fixed;
-  border-radius: var(--radius-full);
-  filter: blur(120px);
-  z-index: -1;
-  opacity: 0.45;
-  pointer-events: none;
-  animation: float 25s infinite alternate ease-in-out;
-  transition: opacity var(--transition-normal);
+  display: none !important;
 }
 
 .blob-1 {

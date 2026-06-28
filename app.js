@@ -301,8 +301,8 @@ function handleLogin(e) {
     }
 
     // Success notifications & redirection
-    showToast('Login Successful', 'Welcome back, Administrator.', 'success');
-    addActivity('Admin logged in securely.');
+    showToast('Login Successful', 'Welcome back, Prannoy.', 'success');
+    addActivity('Prannoy logged in securely.');
     
     // Clear inputs
     dom.loginEmail.value = '';
@@ -329,7 +329,7 @@ function handleLogout() {
   localStorage.removeItem('pulse_admin_logged_in');
   sessionStorage.removeItem('pulse_admin_logged_in');
   
-  addActivity('Admin signed out.');
+  addActivity('Prannoy signed out.');
   showToast('Signed Out', 'Your session has been terminated safely.', 'warning');
   
   showAuthSection();
